@@ -1,0 +1,18 @@
+h1
+{
+ color: red;
+}
+p{
+ color: blue;
+ background-color: aqua;
+ align-items: center;
+}
+/*body
+{
+ color: black;
+ background-color: antiquewhite;
+}*/
+div
+{
+    background-color: aqua;
+}

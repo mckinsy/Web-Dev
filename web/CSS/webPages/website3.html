@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .header
+        {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            /* margin-left: 34px; */
+            /* background-color: lightgray; */
+            /* margin: 30px 230px; */
+            /* padding: 30px 230px; */
+        }
+        .link a
+        {
+            text-decoration: none;
+            color: rgb(220, 53, 88);
+            font-size: 18px;
+        }
+        .bms
+        {
+            padding: 40px 230px;
+            /* margin: 30px 230px; */
+            background-color: lightgray;
+        }
+        .movies_list img
+        {
+            /* margin: 13px 0px; */
+            height: 150px;
+            width: 180px;
+            border-radius: 8px;
+            transition: 0.5s;
+        }
+        #title
+        {
+            font-size: 19px;
+            font-weight: bold; /*bold text*/
+        }
+        #genre
+        {
+            color: rgba(137,137,137);
+            font-size: 13px;
+        } /*replicate code*/
+        .movies_list
+        {
+            margin: 13px 0px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .movies_list img:hover
+        {
+            transform: scale(1.05);
+            /* transform: translateY(-5px); */
+        }
+    </style>
+</head>
+<body>
+    <div class="bms">
+        <div class="header">
+            <div class="header_title">
+                <h2>Recommended Movies</h2>
+            </div>
+            <div class="link">
+                <a href="">see all</a>
+            </div>
+        </div>
+        <marquee behavior="scroll" direction="left">
+        <div class="movies_list">   
+         <div class="movie">
+            <img src="g410737519.1.jpg" alt="">
+            <p id="title">Title of movie</p>
+            <p id="genre">Genre</p>
+         </div>
+         <div class="movie">
+            <img src="g410737519.1.jpg" alt="">
+            <p id="title">Title of movie</p>
+            <p id="genre">Genre</p>
+         </div>
+         <div class="movie">
+            <img src="g410737519.1.jpg" alt="">
+            <p id="title">Title of movie</p>
+            <p id="genre">Genre</p>
+         </div>
+         <div class="movie">
+            <img src="g410737519.1.jpg" alt="">
+            <p id="title">Title of movie</p>
+            <p id="genre">Genre</p>
+         </div>
+         <div class="movie">
+            <img src="g410737519.1.jpg" alt="">
+            <p id="title">Title of movie</p>
+            <p id="genre">Genre</p>
+         </div>
+        </div>
+    </marquee>
+    </div> //bms
+</body>
+</html>

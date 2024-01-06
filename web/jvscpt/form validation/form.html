@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *
+        {
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .outer
+        {
+
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background:linear-gradient(125deg,red,blue,purple,transparent);
+        }
+        .options
+        {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .inner
+        {
+            
+            width: 30%;
+            border: none;
+            border-radius: 10px;
+            padding: 100px;
+            background-color: white;
+        }
+        #face,#gog
+        {
+            height: 30px;
+            width: 80px;
+            margin: 0px 12px;
+        }
+        .A 
+        {
+            border: 1px solid black;
+            margin: 12px 0px;
+            border-radius: 5px;
+            display: block;
+            height: 30px;
+            width: 100% ;
+        }
+
+        .para{
+            color: red;
+            text-align: left;
+            display: none; /* visibility: hidden; --> this will take some extra unwanted space*/
+        }
+    </style>
+    <script>
+        // func= ()=>{ 
+        //                 document.body.style.backgroundColor=document.querySelector('#val').value; // .value is property keyword use to get the user entered value in textul form
+        //         }
+        // func1= ()=>{ 
+        //                 let title=document.querySelector('h1')
+        //                 // let val=document.querySelector('#val').value
+        //                 //title.style.color=document.querySelector('#val').value
+        //                 // title.innerText=`I'm ${val} now`
+        //                 title.innerText=`I'm ${document.querySelector('#val').value} now`
+        //                 document.body.style.color=document.querySelector('#val').value; // this cannot change the inline css overriden styles includibg colour
+        //         }
+
+        // func2=()=>{ 
+        //     // let val=document.querySelector('#val2').value 
+        //     // let date=new Date().getFullYear()
+        //     // alert(`Age is --> ${Math.abs(val-date)}`)
+        //     alert(`Age is --> ${Math.abs(document.querySelector('#val2').value -new Date().getFullYear())}`)
+        // }
+        
+        signIn=()=>{ 
+                        let email=document.getElementById('email')
+                        let password=document.getElementById('password')
+                        let text=document.querySelectorAll('.para')
+                        let i=text.length;
+                        if(email.value=="something@gmail.com" && password.value==12345)
+                        alert(`login successfull`)
+                        else
+                        {
+                            alert(`invalid credentials`)
+                            email.style.border="1px solid red"
+                            password.style.border="1px solid red"
+                            text[0].style.display="block"
+                            text[1].style.display="block" 
+                            // while(i>=0)
+                            // {
+                            //     text[i].style.display="block"
+                            //     i--;
+                            // }
+                        } 
+                   }
+
+    </script>
+</head>
+<body>
+    <div class="outer">
+        <!-- <center> -->
+        <div class="inner">
+            <h1 style="margin-bottom: 20px;">Sign In With</h1>
+            <div class="options">
+                <button type="button"  id="face" style="background-color: blue; color: white; border: none; border-radius: 5px;">Facebook</button>
+                <button type="button" id="gog" style="box-shadow: 0px 0px 8px black; border-radius: 5px; border: none;" >Google</button>
+            </div>
+            <!-- <label for="database" style="align-items: left;">Username</label> -->
+            <!-- <input id="val" style="text-align: left; padding-left: 5px;" placeholder="Enter colour" class="A" type="text"> -->
+            <p class="para" >Email is incorrect</p>
+            <input id="email" style="text-align: left; padding-left: 5px;" placeholder="Email" class="A" type="email">
+            <p class="para" >password is incorrect</p>
+            <input id="password" style="text-align: left; padding-left: 5px;" placeholder="password" class="A" type="password">
+            <!-- <input id="val2" style="text-align: left; padding-left: 5px;" placeholder="Enter DOB" class="A" type="number"> -->
+            <button onclick="signIn()" type="button" class="A" style="background-color: black; color: white;width: 102%;">Sign In</button>
+            <!-- <button onclick="func()" type="button" class="A" style="background-color: black; color: white;">Change Background</button>
+            <button onclick="func1()" type="button" class="A" style="background-color: black; color: white;">change text color</button>
+            <button onclick="func2()" type="button" class="A" style="background-color: black; color: white;">Display Age</button> -->
+            <p style="margin-top: 53px;">Not a member?<a style="text-decoration: none; color: red;" href="">Sign Up Now</a></p>
+        </div>
+        <!-- </center> -->
+    </div>
+    
+</body>
+</html>

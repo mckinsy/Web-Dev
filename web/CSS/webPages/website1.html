@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* .box1
+        {
+            align-items: center;
+            width: 300px;
+            background-color: aqua;
+            border: 1px solid black;
+            padding: 25px; 
+        }
+        .box2
+        {
+            align-items: center;
+            width: 300px;
+            background-color: aqua;
+            border: 1px solid black;
+            padding: 25px; 
+        } */
+        .box1,.box2
+        {
+            width: 200px;
+            background-color: cornflowerblue;
+        }
+        .parent
+        {
+            margin-left: 40;
+            display: flex;
+            align-items: center;/*moving items vertically along y axis is done by align items in flex start, center and end*/
+            justify-content: space-around;/*only works when there is free space ,it moves along x axis it is center,end and start, space-between(no space on left right only space present is in between), space-evenly(left right has more space than center), space around(left and right have same amount of space but between space is double of left and right)
+            justify-content: center;*/
+            /*flex-direction: row-reverse;/*row(default) , row-reverse, column, column-reverse*/
+        }
+        /*element selector,group selector , descendant eg  parent.div{ } or .box1,.box2{ }*/
+        /* div 
+        {
+            align-items: center;
+        } */
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="box1">
+            <h1>Flexible Learning</h1>
+            <p>Mayatsuka mayu vakaru khotuda</p>
+            <p>you gave me a nice hint i will definetly give you something good in return</p>
+        </div>
+        <div class="box2">
+            <img width="200" src="AMG-308-20-21.png" alt="not found">
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,29 @@
+/*application of box model*/
+.Instagram
+{
+    border: 2px solid rgb(153, 124, 119);
+    text-align: center;
+    width: 28%;
+    margin-left: 35%;
+    margin-top: 8%;
+
+    /*height: 300px; instead of height use margin below button*/
+}
+input  /*element selector not class names*/
+{
+ height: 30px;  /*don't go for padding it's not recommended it gives spaces wheere don't required*/
+ width: 300px;  
+ border: 1px solid lightgray;
+ margin: 5px 0px; /*top-bottom(5px) left-right(0) between two input tags*/
+ padding-left: 10px;
+}
+button
+{
+    height: 35px; 
+    width: 311px; 
+    border-radius: 7px;
+    margin-bottom: 20px;
+    background-color: rgba(0, 0, 255, 0.684);
+    color: white;
+    border: none; /*by default border is given so remove it manually*/
+}

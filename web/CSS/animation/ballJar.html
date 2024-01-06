@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .jar
+        {
+            margin-top: 200px;
+            height: 300px;
+            width: 310px;
+            border: 2px solid black;
+            border-top: 4px solid white;
+            border-radius: 2px 2px 32px 32px;
+            background-color: white;
+            
+        }
+        .water
+        {
+            margin-top: 38px;
+            height: 262px;
+            width: 310px;
+            border: none;
+            border-radius: 2px 2px 32px 32px;
+            background-color: aqua;
+            display: flex; 
+            /* position: relative;   */
+        }
+        marquee .ball
+        {
+            height: 60px;
+            width: 60px;
+            border-radius: 50%;
+            background-color: red;
+           
+        }
+        /* .fish
+        {
+            height: 234px;
+            width: 293px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .fish .oval
+        {
+            height: 70px;
+            width: 148px;
+            background-color: red;
+            border-radius: 50%;
+            position: relative;
+            z-index: 1;
+        }
+        .fish .triang
+        {
+            border-left: 23px solid transparent;
+            border-right: 26px solid transparent ;
+            border-bottom: 98px solid aqua;
+            transform: rotate(90deg);
+            position: relative;
+            z-index: 0;
+        }
+        .fish .triangle
+        {
+            border-left: 23px solid transparent;
+            border-right: 26px solid transparent ;
+            border-bottom: 98px solid red;
+            transform: rotate(-90deg);
+            position: relative;
+            z-index: 0;
+        } */
+        /* marquee
+        {
+            position: relative;
+        }
+        #e1
+        {
+                width: 1000px;
+        }
+        e2
+        {
+
+        }
+        #e3
+        {
+
+        }
+        #e4
+        {
+
+        } */
+    </style>
+</head>
+<body>
+    <center>
+      <div class="jar">
+           <div class="water">
+        <!-- <div class="path"> -->
+             <marquee id="e1" behavior="alternate" direction="up"><div class="ball"></div></marquee>
+        <!-- </div> -->
+        <!-- <div class="path"> -->
+             <marquee id="e2" behavior="alternate" direction="right"><div class="ball ball1"></div></marquee>
+        <!-- </div> -->
+        <!-- <div class="path"> -->
+            <marquee id="e3" behavior="alternate" direction="down"><div class="ball"></div></marquee>
+        <!-- </div> -->
+        <!-- <div class="path"> -->
+            <marquee id="e4" behavior="alternate" direction="left"><div class="ball ball2"></div></marquee>
+        <!-- </div> -->
+        <!-- <div class="path"> -->
+            <marquee behavior="alternate" direction="down"><div class="ball"></div></marquee>
+        <!-- </div> -->
+        <!-- <marquee behavior="alternate" direction="right"> -->
+            <!-- <marquee behavior="" direction=""><div class="ball"></div></marquee> -->
+            <!-- <div class="fish">
+                <div class="oval"><div class="triang"></div></div>
+                <div class="triangle"><div class="tria"></div></div>
+            </div> -->
+            
+        </marquee>
+       </div>
+     </div>
+    </center>
+</body>
+</html>
